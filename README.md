@@ -13,6 +13,7 @@ A PetCare API é um sistema completo para cadastro e gerenciamento de informaç�
 - **TypeORM** - ORM para TypeScript e JavaScript
 - **SQLite** - Banco de dados embutido
 - **ts-node** - Execução de TypeScript diretamente no Node.js
+- **OpenAPI/Swagger** - Documentação interativa dos endpoints da API
 
 ## 📦 Estrutura do Projeto
 
@@ -67,6 +68,17 @@ A entidade Pet possui as seguintes propriedades:
 | **POST** | `/pets` | Cria um novo pet |
 | **PUT** | `/pets/:id` | Atualiza um pet existente |
 | **DELETE** | `/pets/:id` | Remove um pet |
+| **GET** | `/docs` | Abre a documentação interativa da API |
+
+## 📚 Documentação Swagger
+
+Com o servidor em execução, acesse a documentação interativa em:
+
+```text
+http://localhost:3000/docs
+```
+
+A página permite consultar os contratos das rotas de pets, adotantes e endereços, visualizar parâmetros e corpos de requisição e executar chamadas de teste diretamente pelo navegador.
 
 ### 🔍 Exemplos de Uso
 

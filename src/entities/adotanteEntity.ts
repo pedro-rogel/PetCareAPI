@@ -20,6 +20,8 @@ export default class AdotanteEntity {
   @Column({nullable: true})
   address?: string;
 
+
+
   constructor(
     name: string,
     password: string,

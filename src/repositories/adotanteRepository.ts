@@ -61,7 +61,7 @@ export default class AdotanteRepository implements InterfaceAdotande {
   }
   async atualizarAdotante(
     id: number,
-    adotande: AdotanteEntity
+    adotande: AdotanteEntity,
   ): Promise<{
     success: boolean;
     message?: string;
@@ -84,7 +84,7 @@ export default class AdotanteRepository implements InterfaceAdotande {
   }
 
   async deletarAdotante(
-    id: number
+    id: number,
   ): Promise<{ success: boolean; message?: string }> {
     const adotanteToDelete = await this.repository.findOne({ where: { id } });
     if (!adotanteToDelete)

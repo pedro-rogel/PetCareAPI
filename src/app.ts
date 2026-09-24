@@ -2,6 +2,7 @@ import express, { Response } from "express";
 import router from "./routes";
 import "reflect-metadata";
 import { AppDataSource } from "./config/dbConfig";
+
 const app = express();
 router(app);
 
